@@ -95,6 +95,20 @@ public class ViewerSwitch : MonoBehaviour {
             subPanel3 = "DefaultImagen";
             subPanel4 = "DefaultImagen";
 		}
+		else if(number == 17002)
+		{
+            date.text = "1700";
+
+			title.text = "Inicio de la Dinastía Borbón";
+
+			title.fontSize = 40;
+
+			txt.text = "A la muerte sin descendencia de Fernando VI, le sucedió en el trono su sobrino "
+			+ "Carlos III y posteriormente en 1760 es coronado Carlos IV de España,  abdicando éste a "
+			+ "favor de su hijo Fernando VII en 1808.";
+
+			subPanel = false;
+		}
 		else if(number == 1752)
 		{
 			date.text = "1752";
@@ -178,9 +192,9 @@ public class ViewerSwitch : MonoBehaviour {
 		{
 			date.text = "1772";
 
-			title.text = "Nacimiento de José Gutiérrez";
+			title.text = "Nacimiento de José Gutiérrez López";
 
-			txt.text = "Nace en Macharaviaya, municipio de Málaga, José Gutiérrez, arquitecto y académico de mérito de la Real Academia "
+			txt.text = "Nace en Macharaviaya, municipio de Málaga, José Gutiérrez López, arquitecto y académico de mérito de la Real Academia "
 			+ "de San Carlos y primer maestro de arquitectura en la Nueva Galicia. Se hace cargo de la construcción de La Casa de la "
 			+ "Misericordia, actualmente Instituto Cultural Cabañas.";
 
@@ -204,7 +218,7 @@ public class ViewerSwitch : MonoBehaviour {
 		{
 			date.text = "1781";
 
-			title.text = "La Real Academia de San Carlos";
+			title.text = "La Real Academia de San Carlos de la Nueva España";
 
 			title.fontSize = 40;
 
@@ -281,19 +295,7 @@ public class ViewerSwitch : MonoBehaviour {
 			txt.text = "El 14 de julio estalla la Revolución francesa con la toma de la Bastilla. El 26 de agosto se aprueba "
 			+ "la Declaración de los derechos del hombre y del ciudadano en París.";
 
-			subPanel = true;
-
-			siglo = "siglo XVIII/";
-
-            panel1.sprite = Resources.Load<Sprite>("Images/" + siglo + date.text + "/" + "A") as Sprite;
-            panel2.sprite = Resources.Load<Sprite>("Images/" + siglo + date.text + "/" + "B") as Sprite;
-            panel3.sprite = Resources.Load<Sprite>("Images/DefaultImagen") as Sprite;
-            panel4.sprite = Resources.Load<Sprite>("Images/DefaultImagen") as Sprite;
-
-            subPanel1 = siglo + date.text + "/" + "A";
-            subPanel2 = siglo + date.text + "/" + "B";
-            subPanel3 = "DefaultImagen";
-            subPanel4 = "DefaultImagen";
+			subPanel = false;
 		}
 		else if(number == 1791)
 		{
@@ -384,7 +386,7 @@ public class ViewerSwitch : MonoBehaviour {
 		{
 			date.text = "1796";
 
-			title.text = "Se inaugura la escultura de Carlos IV";
+			title.text = "Escultura de Carlos IV";
 
 			title.fontSize = 40;
 
@@ -605,7 +607,7 @@ public class ViewerSwitch : MonoBehaviour {
 		{
 			date.text = "1823";
 
-			title.text = "El Estado Libre y Soberano de Jalisco";
+			title.text = "Estado Libre y Soberano de Jalisco";
 
 			title.fontSize = 40;
 
@@ -668,7 +670,7 @@ public class ViewerSwitch : MonoBehaviour {
 		{
 			date.text = "1825";
 
-			title.text = "José Gutiérrez en Guadalajara";
+			title.text = "Regreso de José Gutiérrez a Guadalajara";
 
 			title.fontSize = 40;
 
@@ -775,7 +777,7 @@ public class ViewerSwitch : MonoBehaviour {
 		{
 			date.text = "1845";
 
-			title.text = "Culminación de las bóvedas";
+			title.text = "Culminación de la cúpula";
 
 			title.fontSize = 40;
 
@@ -789,13 +791,12 @@ public class ViewerSwitch : MonoBehaviour {
 		{
 			date.text = "1852";
 
-			title.text = "La cúpula es concluida";
+			title.text = "Invasión Estadounidense";
 
 			title.fontSize = 40;
 
-			txt.text = "Manuel Gómez Ibarra concluye la construcción de la cúpula del edificio. \n\n" 
-			+ "Se deterioran las relaciones de México con Estados Unidos y la Casa de la Misericordia vuelve a ser utilizada como "
-			+ "ciudadela; los niños que la habitan son enviados a distintos lugares de la ciudad.";
+			txt.text = "Se deterioran las relaciones de México con Estados Unidos y la Casa de la Misericordia vuelve a ser utilizada "
+			+ "como  ciudadela;   los niños que la habitaban fueron enviados a distintos lugares de la ciudad.";
 
 			subPanel = false;
 		}
@@ -896,7 +897,7 @@ public class ViewerSwitch : MonoBehaviour {
 		{
             date.text = "1862-1867";
 
-			title.text = "La segunda intervención francesa";
+			title.text = "La Intervención Francesa";
 
 			txt.text = "Debido a que el presidente Benito Juárez suspendió los pagos de la deuda externa del país en 1861, Francia, "
 			+ "Inglaterra y España envían tropas a México. Con el Tratado de la Soledad, las tropas inglesas y españolas se retiran. "
@@ -911,7 +912,7 @@ public class ViewerSwitch : MonoBehaviour {
 		{
 			date.text = "1864";
 
-			title.text = "Crisis para La Casa de la Misericordia";
+			title.text = "Crisis en el Hospicio Cabañas";
 
 			title.fontSize = 40;
 
@@ -1554,7 +1555,7 @@ public class ViewerSwitch : MonoBehaviour {
 		{
 			date.text = "1976";
 
-			title.text = "El fin de la dictadura española";
+			title.text = "El fin de la dictadura franquista";
 
 			title.fontSize = 40;
 
@@ -1961,7 +1962,7 @@ public class ViewerSwitch : MonoBehaviour {
         {
             date.text = "2015";
 
-            title.text = "Conservación y restauración de colecciones";
+            title.text = "Conservación y restauración de los murales.";
 
             title.fontSize = 35;
 
@@ -2036,6 +2037,20 @@ public class ViewerSwitch : MonoBehaviour {
             subPanel2 = siglo + date.text + " (3)" + "/" + "B";
             subPanel3 = siglo + date.text + " (3)" + "/" + "C";
             subPanel4 = siglo + date.text + " (3)" + "/" + "D";
+		}
+		else if(number == 2016)
+		{
+            date.text = "2016";
+
+            title.text = "Proyecto Línea del Tiempo";
+
+            title.fontSize = 40;
+
+            txt.text = "Se inicia un convenio de colaboración entre la Universidad de Guadalajara a través  del Sistema de "
+            + "Universidad Virtual y de la Maestria en Gestión y Desarrollo Cultural para llevar a cabo la Línea del Tiempo Virtual "
+            + "del Museo de Sitio de este Instituto. ";
+
+            subPanel = false;
 		}
 		else if(number == 2017)
 		{
